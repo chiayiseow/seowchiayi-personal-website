@@ -8,12 +8,26 @@ export default function Page() {
         <p className="prose prose-neutral dark:prose-invert">
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+          <h2 className="font-medium text-xl mb-1 tracking-tighter">Sonar</h2>
+            <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+              AI Researcher 2025 - present
+            </p>
+            <p>
+              <a href="https://docs.sonarsource.com/sonarqube-cloud/ai-capabilities/ai-agents">Sonar</a> Currently building an agent that fixes code maintainability and quality issues within your Github pull request
+            </p>
+            <ul>
+              <li>Investigate code, logs and LLM API responses in the agent observability stack to identify areas for improvement</li>
+              <li>Integrate new model support for the agent</li>
+              <li>Execute experiments to evaluate agent's performance on the latest LLM models</li>
+              <li>Generate datasets of programs with various maintainability, reliability and security issues in Python, Java and Javascript</li>
+            </ul>
+          <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
           <h2 className="font-medium text-xl mb-1 tracking-tighter">Corgi Labs (YC W23)</h2>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm">
             Founding Engineer 2023-2024
           </p>
           <p>
-            <a href="https://corgilabs.ai">Corgi Labs</a> was a great experience for me to learn how to build products for users.
+            <a href="https://corgilabs.ai">Corgi Labs</a> was a great experience for me to learn how to build payment and credit card fraud detection product for SMEs.
           </p>
           <ul>
             <li>
