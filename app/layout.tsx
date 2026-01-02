@@ -10,15 +10,15 @@ import { SandpackCSS } from './blog/[slug]/sandpack';
 export const metadata: Metadata = {
   metadataBase: new URL('https://leerob.io'),
   title: {
-    default: 'Seow Chiayi',
-    template: '%s | Seow Chiayi',
+    default: 'Chiayi Seow',
+    template: '%s | Chiayi',
   },
   description: 'Developer, writer, and creator.',
   openGraph: {
-    title: 'Seow Chiayi',
+    title: 'Chiayi Seow',
     description: 'Developer, writer, and creator.',
     url: 'https://leerob.io',
-    siteName: 'Seow Chiayi',
+    siteName: 'Chiayi Seow',
     locale: 'en_US',
     type: 'website',
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Seow Chiayi',
+    title: 'Chiayi Seow',
     card: 'summary_large_image',
   },
   verification: {
