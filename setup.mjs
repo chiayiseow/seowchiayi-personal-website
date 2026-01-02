@@ -35,27 +35,38 @@ const workPage = `export default function Page() {
 `;
 
 const deleteFolderRecursive = async (path) => {
-  const stat = await fs.stat(path);
-  if (stat.isDirectory()) {
-    const files = await fs.readdir(path);
-    await Promise.all(
-      files.map((file) => deleteFolderRecursive(`${path}/${file}`))
-    );
-    await fs.rmdir(path);
-  } else {
-    await fs.unlink(path);
+  try {
+    const stat = await fs.stat(path);
+    if (stat.isDirectory()) {
+      const files = await fs.readdir(path);
+      await Promise.all(
+        files.map((file) => deleteFolderRecursive(`${path}/${file}`))
+      );
+      await fs.rmdir(path);
+    } else {
+      await fs.unlink(path);
+    }
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      // Path doesn't exist, skip deletion
+      console.log(`Skipping deletion of ${path} (does not exist)`);
+      return;
+    }
+    throw error;
   }
 };
 
 (async () => {
   dotenv.config();
 
-  if (process.env.IS_TEMPLATE === 'false') {
-    // This means it's not the template, it's my legit site
-    // I orderride the env variable for my site. This means that when
-    // folks clone this repo for the first time, it will delete my personal content
+  // Only run cleanup if IS_TEMPLATE is explicitly set to 'true'
+  // This protects personal content by defaulting to skip cleanup
+  if (process.env.IS_TEMPLATE !== 'true') {
+    console.log('Skipping template setup (IS_TEMPLATE is not "true")');
     return;
   }
+
+  console.log('Running template setup...');
 
   const contentDir = path.join(process.cwd(), 'content');
   const imagesDir = path.join(process.cwd(), 'public', 'images');
