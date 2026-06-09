@@ -13,13 +13,12 @@ export default function Page() {
               AI Researcher 2025 - present
             </p>
             <p>
-              <a href="https://docs.sonarsource.com/sonarqube-cloud/ai-capabilities/ai-agents">Sonar</a> Currently building an agent that fixes code maintainability and quality issues within your Github pull request
+              <a href="https://docs.sonarsource.com/sonarqube-cloud/ai-capabilities/ai-agents">Sonar</a> Currently working on agentic tooling for better and more secure code generation
             </p>
             <ul>
-              <li>Investigate code, logs and LLM API responses in the agent observability stack to identify areas for improvement</li>
-              <li>Integrate new model support for the agent</li>
-              <li>Execute experiments to evaluate agent's performance on the latest LLM models</li>
-              <li>Generate datasets of programs with various maintainability, reliability and security issues in Python, Java and Javascript</li>
+              <li>Led a team of 3 to build an agentic benchmark platform using Harbor</li>
+              <li>Construct and validate a benchmark of agentic tasks derived from internal Sonar repository commits — covering dataset curation, verification, composition, and acceptance criteria — then evaluate frontier CLI agents under a controlled experimental setup</li>
+              <li>Develop insights and recommendations to advance the company's agentic research community"</li>
             </ul>
           <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
           <h2 className="font-medium text-xl mb-1 tracking-tighter">Corgi Labs (YC W23)</h2>
