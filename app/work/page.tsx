@@ -16,9 +16,9 @@ export default function Page() {
               <a href="https://docs.sonarsource.com/sonarqube-cloud/ai-capabilities/ai-agents">Sonar</a> Currently working on agentic tooling for better and more secure code generation
             </p>
             <ul>
-              <li>Led a team of 3 to build an agentic benchmark platform using Harbor</li>
-              <li>Construct and validate a benchmark of agentic tasks derived from internal Sonar repository commits — covering dataset curation, verification, composition, and acceptance criteria — then evaluate frontier CLI agents under a controlled experimental setup</li>
-              <li>Develop insights and recommendations to advance the company's agentic research community"</li>
+              <li>Led a team of 3 to build an agentic benchmark platform using Harbor.</li>
+              <li>Construct and validate a benchmark of agentic tasks derived from internal Sonar repository commits — covering dataset curation, verification, composition, and acceptance criteria — then evaluate frontier CLI agents under a controlled experimental setup.</li>
+              <li>Develop insights and recommendations to advance the company's agentic research community.</li>
             </ul>
           <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
           <h2 className="font-medium text-xl mb-1 tracking-tighter">Corgi Labs (YC W23)</h2>
@@ -62,7 +62,7 @@ export default function Page() {
           </p>
           <ul>
             <li>
-              Improved the latency of the company's real time credit scoring model deployed on Kubernetes by load testing and code refactoring
+              Improved the latency of the company's real time credit scoring model deployed on Kubernetes by load testing and code refactoring.
             </li>
             <li>
               Optimized the company's ML model API gateway service to make use of <a href="https://docs.paralleluniverse.co/quasar/">lightweight threads</a>.
